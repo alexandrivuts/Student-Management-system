@@ -35,7 +35,7 @@ public class Main {
         }
     }
 
-    protected void finalize() throws IOException {
-        serverSocket.close();
-    }
+//    protected void finalize() throws IOException {
+//        serverSocket.close();
+//    }
 }
