@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f2f8ff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.student.UserMenu">
+   <children>
+      <!-- Заголовок -->
+      <Label layoutX="40.0" layoutY="14.0" style="-fx-font-weight: Bold;" text="Интегрированная информационная система" textAlignment="CENTER" textFill="#003366">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+
+      <!-- Приветственное сообщение -->
+      <Label layoutX="181.0" layoutY="37.0" text="Добро пожаловать!" textFill="#484848">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+
+      <!-- Кнопка Мой профиль -->
+      <Button fx:id="myProfileButton" layoutX="238.0" layoutY="111.0" mnemonicParsing="false" onAction="#myProfileButton_Pressed" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Мой профиль" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Сессия -->
+      <Button fx:id="mySessionButton" layoutX="239.0" onAction="#mySessionButton_Pressed" layoutY="150.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Сессия" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Все студенты -->
+      <Button fx:id="allStudentsButton" layoutX="239.0" layoutY="189.0" mnemonicParsing="false" onAction="#allStudentsButton_Pressed" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Все студенты" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Стипендия -->
+      <Button fx:id="myScholarshipButton" onAction="#myScholarshipButton_Pressed" layoutX="239.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Стипендия" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Выйти -->
+      <Button fx:id="logOutButton" layoutX="259.0" layoutY="268.0" mnemonicParsing="false" onAction="#logOutButton_Pressed" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: red; -fx-text-fill: white; font-weight: bold;" text="Выйти" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f2f8ff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.admin.MyProfileAdmin">
+   <children>
+      <!-- Заголовок -->
+      <Label layoutX="200.0" layoutY="20.0" style="-fx-font-weight: Bold;" text="Профиль Представителя деканата" textAlignment="CENTER" textFill="#003366">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Label>
+
+      <!-- Метки для отображения данных -->
+      <Label layoutX="235.0" layoutY="100.0" style="-fx-font-weight: bold; -fx-text-fill: #003366;" text="Фамилия:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="140.0" style="-fx-font-weight: bold; -fx-text-fill: #003366;" text="Имя:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="180.0" style="-fx-font-weight: bold; -fx-text-fill: #003366;" text="ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="220.0" style="-fx-font-weight: bold; -fx-text-fill: #003366;" text="Дата рождения:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="260.0" style="-fx-font-weight: bold; -fx-text-fill: #003366;" text="E-mail:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="300.0" style="-fx-font-weight: bold; -fx-text-fill: #003366;" text="Номер телефона:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+
+      <!-- Метки для динамически обновляемых данных -->
+      <Label fx:id="surnameLabel" layoutX="400.0" layoutY="100.0" style="-fx-text-fill: #003366;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="400.0" layoutY="140.0" style="-fx-text-fill: #003366;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="idLabel" layoutX="400.0" layoutY="180.0" style="-fx-text-fill: #003366;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="birthdayLabel" layoutX="400.0" layoutY="220.0" style="-fx-text-fill: #003366;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" layoutX="400.0" layoutY="260.0" style="-fx-text-fill: #003366;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNumberLabel" layoutX="400.0" layoutY="300.0" style="-fx-text-fill: #003366;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="logOutButton" layoutX="50.0" layoutY="410.0" mnemonicParsing="false" onAction="#logOutButton_Pressed" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: red; -fx-text-fill: white; font-weight: bold;" text="Выйти" />
+      <Button fx:id="myProfileButton" layoutX="32.0" layoutY="104.0" mnemonicParsing="false" onAction="#myProfileButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Мой профиль" />
+      <Button fx:id="allStudentsButton" layoutX="32.0" layoutY="145.0" mnemonicParsing="false" onAction="#allStudentsButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Все студенты" />
+      <Button fx:id="addStudentButton" layoutX="32.0" layoutY="187.0" mnemonicParsing="false" onAction="#addStudentButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Добавить студента" />
+      <Button fx:id="deleteStudentButton" layoutX="32.0" layoutY="229.0" mnemonicParsing="false" onAction="#deleteStudentButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Удалить студента" />
+      <Button fx:id="addSessionButton" layoutX="32.0" layoutY="270.0" mnemonicParsing="false" onAction="#addSessionButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Заполнить сессию" />
+      <Button fx:id="addGroupButton" layoutX="32.0" layoutY="310.0" mnemonicParsing="false" onAction="#addGroupButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Добавить группу" />
+      <Button fx:id="deleteGroupButton" layoutX="32.0" layoutY="347.0" mnemonicParsing="false" onAction="#deleteGroupButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Удалить группу" />
+   </children>
+</AnchorPane>

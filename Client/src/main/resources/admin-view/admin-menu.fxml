@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="600.0" style="-fx-background-color: #f2f8ff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.admin.AdminMenu">
+   <children>
+      <!-- Заголовок -->
+      <Label layoutX="40.0" layoutY="14.0" style="-fx-font-weight: Bold;" text="Интегрированная информационная система" textAlignment="CENTER" textFill="#003366">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+
+      <!-- Приветственное сообщение -->
+      <Label layoutX="181.0" layoutY="37.0" text="Добро пожаловать!" textFill="#484848">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+
+      <!-- Кнопка Мой профиль -->
+      <Button fx:id="myProfileButton" layoutX="224.0" layoutY="94.0" mnemonicParsing="false" onAction="#myProfileButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Мой профиль" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Все студенты -->
+      <Button fx:id="allStudentsButton" layoutX="224.0" layoutY="135.0" mnemonicParsing="false" onAction="#allStudentsButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Все студенты" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Добавить студента -->
+      <Button fx:id="addStudentButton" layoutX="224.0" layoutY="177.0" mnemonicParsing="false" onAction="#addStudentButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Добавить студента" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Удалить студента -->
+      <Button fx:id="deleteStudentButton" layoutX="224.0" layoutY="219.0" mnemonicParsing="false" onAction="#deleteStudentButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Удалить студента" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Заполнить сессию -->
+      <Button fx:id="addSessionButton" layoutX="224.0" layoutY="260.0" mnemonicParsing="false" onAction="#addSessionButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Заполнить сессию" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Добавить группу -->
+      <Button fx:id="addGroupButton" layoutX="224.0" layoutY="300.0" mnemonicParsing="false" onAction="#addGroupButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Добавить группу" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Удалить группу -->
+      <Button fx:id="deleteGroupButton" layoutX="224.0" layoutY="337.0" mnemonicParsing="false" onAction="#deleteGroupButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Удалить группу" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Кнопка Выйти -->
+      <Button fx:id="logOutButton" layoutX="258.0" layoutY="381.0" mnemonicParsing="false" onAction="#logOutButton_Pressed" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: red; -fx-text-fill: white; font-weight: bold;" text="Выйти" />
+   </children>
+</AnchorPane>

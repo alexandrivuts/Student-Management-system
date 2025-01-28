@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="756.0" style="-fx-background-color: #f2f8ff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.student.MySession">
+   <children>
+      <!-- Заголовок -->
+      <Label layoutX="268.0" layoutY="14.0" style="-fx-font-weight: bold; -fx-text-fill: #003366;" text="Интегрированная информационная система" textAlignment="CENTER" translateX="-156.0">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+
+      <!-- Кнопки -->
+      <Button fx:id="myProfileButton" layoutX="28.0" layoutY="147.0" mnemonicParsing="false" onAction="#myProfileButton_Pressed" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Мой профиль">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="mySessionButton" layoutX="28.0" layoutY="193.0" mnemonicParsing="false" onAction="#mySessionButton_Pressed" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Сессия">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="allStudentsButton" layoutX="28.0" layoutY="243.0" mnemonicParsing="false" onAction="#allStudentsButton_Pressed" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Все студенты">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="myScholarshipButton" layoutX="28.0" layoutY="293.0" mnemonicParsing="false" onAction="#myScholarshipButton_Pressed" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Стипендия">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="logOutButton" layoutX="28.0" layoutY="337.0" mnemonicParsing="false" onAction="#logOutButton_Pressed" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: red; -fx-text-fill: white; font-weight: bold;" text="Выйти">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Оценки -->
+      <Label layoutX="268.0" layoutY="123.0" style="-fx-font-weight: bold;" text="Курс:" />
+      <Label fx:id="course" layoutX="307.0" layoutY="121.0" text="Текущий курс">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+
+      <Label layoutX="268.0" layoutY="144.0" style="-fx-font-weight: bold;" text="Фамилия:" />
+      <Label fx:id="name" layoutX="307.0" layoutY="163.0" text="Имя">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="surname" layoutX="335.0" layoutY="142.0" text="Фамилия">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+
+      <Label layoutX="268.0" layoutY="203.0" style="-fx-font-weight: bold;" text="Предметы:" />
+      <Label fx:id="subject1" layoutX="270.0" layoutY="239.0" text="Предмет 1">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="subject2" layoutX="270.0" layoutY="279.0" text="Предмет 2">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="subject3" layoutX="270.0" layoutY="319.0" text="Предмет 3">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="subject4" layoutX="270.0" layoutY="359.0" text="Предмет 4">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+      <Label fx:id="subject5" layoutX="270.0" layoutY="399.0" text="Предмет 5">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Label>
+
+      <Label layoutX="429.0" layoutY="203.0" style="-fx-font-weight: bold;" text="Оценки:" />
+      <Label fx:id="grade1" layoutX="429.0" layoutY="237.0" textFill="#2ed128">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="grade2" layoutX="429.0" layoutY="277.0" textFill="#2ed128">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="grade3" layoutX="429.0" layoutY="317.0" textFill="#2ed128">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="grade4" layoutX="429.0" layoutY="357.0" textFill="#2ed128">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="grade5" layoutX="429.0" layoutY="397.0" textFill="#2ed128">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="268.0" layoutY="165.0" style="-fx-font-weight: bold;" text="Имя:" />
+   </children>
+</AnchorPane>

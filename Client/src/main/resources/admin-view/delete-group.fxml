@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="756.0" style="-fx-background-color: #f2f8ff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.admin.DeleteGroup">
+   <children>
+      <Label layoutX="104.0" layoutY="14.0" style="-fx-font-weight: Bold;" text="Интегрированная информационная система" textAlignment="CENTER" textFill="#003366">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchField" layoutX="494.0" layoutY="81.0" />
+      <Button fx:id="searchButton" layoutX="660.0" layoutY="81.0" mnemonicParsing="false" onAction="#onSearchButtonClicked" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #66ccff;" text="Поиск" />
+      <Button fx:id="logOutButton" layoutX="40.0" layoutY="400.0" mnemonicParsing="false" onAction="#logOutButton_Pressed" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: red; -fx-text-fill: white; font-weight: bold;" text="Выйти" />
+      <TableView fx:id="tableView" layoutX="202.0" layoutY="143.0" prefHeight="322.0" prefWidth="537.0">
+         <columns>
+            <TableColumn fx:id="columnId" prefWidth="52.0" text="ID" />
+            <TableColumn fx:id="columnGroupNumber" prefWidth="111.199951171875" text="Номер группы" />
+            <TableColumn fx:id="columnCourse" prefWidth="104.800048828125" text="Курс" />
+            <TableColumn fx:id="columnFaculty" prefWidth="147.19998168945312" text="Факультет" />
+            <TableColumn fx:id="columnSpecialization" prefWidth="120.79998779296875" text="Специальность" />
+         </columns>
+      </TableView>
+      <Button fx:id="myProfileButton" layoutX="22.0" layoutY="94.0" mnemonicParsing="false" onAction="#myProfileButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Мой профиль" />
+      <Button fx:id="allStudentsButton" layoutX="22.0" layoutY="135.0" mnemonicParsing="false" onAction="#allStudentsButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Все студенты" />
+      <Button fx:id="addStudentButton" layoutX="22.0" layoutY="177.0" mnemonicParsing="false" onAction="#addStudentButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Добавить студента" />
+      <Button fx:id="deleteStudentButton" layoutX="22.0" layoutY="219.0" mnemonicParsing="false" onAction="#deleteStudentButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Удалить студента" />
+      <Button fx:id="addSessionButton" layoutX="22.0" layoutY="260.0" mnemonicParsing="false" onAction="#addSessionButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Заполнить сессию" />
+      <Button fx:id="addGroupButton" layoutX="22.0" layoutY="300.0" mnemonicParsing="false" onAction="#addGroupButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Добавить группу" />
+      <Button fx:id="deleteGroupButton" layoutX="22.0" layoutY="337.0" mnemonicParsing="false" onAction="#deleteGroupButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Удалить группу" />
+      <Label layoutX="202.0" layoutY="116.0" text="Выберите группу:" textFill="#ff0101">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="removeGroupButton" onAction="#removeGroupButton_Pressed" layoutX="202.0" layoutY="482.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: red;" text="Удалить" textFill="WHITE" />
+   </children>
+</AnchorPane>

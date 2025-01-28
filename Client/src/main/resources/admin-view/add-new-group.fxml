@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="756.0" style="-fx-background-color: #f2f8ff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.admin.AddGroup">
+   <children>
+      <Label layoutX="104.0" layoutY="14.0" style="-fx-font-weight: Bold;" text="Интегрированная информационная система" textAlignment="CENTER" textFill="#003366">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="logOutButton" layoutX="40.0" layoutY="400.0" mnemonicParsing="false" onAction="#logOutButton_Pressed" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: red; -fx-text-fill: white; font-weight: bold;" text="Выйти" />
+      <Button fx:id="myProfileButton" layoutX="22.0" layoutY="94.0" mnemonicParsing="false" onAction="#myProfileButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Мой профиль" />
+      <Button fx:id="allStudentsButton" layoutX="22.0" layoutY="135.0" mnemonicParsing="false" onAction="#allStudentsButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Все студенты" />
+      <Button fx:id="addStudentButton" layoutX="22.0" layoutY="177.0" mnemonicParsing="false" onAction="#addStudentButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Добавить студента" />
+      <Button fx:id="deleteStudentButton" layoutX="22.0" layoutY="219.0" mnemonicParsing="false" onAction="#deleteStudentButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Удалить студента" />
+      <Button fx:id="addSessionButton" layoutX="22.0" layoutY="260.0" mnemonicParsing="false" onAction="#addSessionButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Заполнить сессию" />
+      <Button fx:id="addGroupButton" layoutX="22.0" layoutY="300.0" mnemonicParsing="false" onAction="#addGroupButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Добавить группу" />
+      <Button fx:id="deleteGroupButton" layoutX="22.0" layoutY="337.0" mnemonicParsing="false" onAction="#deleteGroupButton_Pressed" prefHeight="30.0" prefWidth="163.0" style="-fx-background-color: #66ccff; -fx-font-style: italic;" text="Удалить группу" />
+
+      <!-- Поле для ввода номера группы -->
+      <TextField fx:id="groupNumberField" layoutX="296.0" layoutY="124.0" prefHeight="26.0" prefWidth="230.0" />
+
+      <!-- Дропдаун для выбора курса -->
+      <ComboBox fx:id="courseComboBox" layoutX="295.0" layoutY="175.0" prefHeight="26.0" prefWidth="230.0" />
+
+      <!-- Дропдаун для выбора факультета -->
+      <ComboBox fx:id="facultyComboBox" layoutX="295.0" layoutY="227.0" prefHeight="26.0" prefWidth="230.0" />
+
+      <!-- Поле для ввода специальности -->
+      <TextField fx:id="specializationField" layoutX="295.0" layoutY="280.0" prefHeight="26.0" prefWidth="230.0" />
+
+      <Label layoutX="295.0" layoutY="101.0" text="Номер группы:" />
+      <Label layoutX="295.0" layoutY="156.0" text="Курс:" />
+      <Label layoutX="295.0" layoutY="210.0" text="Факультет:" />
+      <Label layoutX="295.0" layoutY="260.0" text="Специальность:" />
+
+      <Button layoutX="297.0" layoutY="340.0" mnemonicParsing="false" onAction="#addGroup" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #66ccff;" text="Добавить" />
+      <Button layoutX="449.0" layoutY="340.0" mnemonicParsing="false" onAction="#logOutButton_Pressed" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: RED;" text="Отмена" textFill="WHITE" />
+
+      <Label layoutX="250.0" layoutY="53.0" style="-fx-font-weight: Bold;" text="Добавление новой группы" textAlignment="CENTER" textFill="#003366">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
